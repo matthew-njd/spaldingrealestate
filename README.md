@@ -1,2 +1,2 @@
-# spaldingrealestate
-#http://spaldingrealestate.ca/
+# Spalding Real Estate
+# http://spaldingrealestate.ca/
