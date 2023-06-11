@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="facebook-domain-verification"
+      content="yo5fle5f844iwwxeultqnf7to2uec1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/images/triangle.png" />
+    <script src="./index.js"></script>
+    <title>Real Estate | by Mark Spalding</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <div class="navbar">
+      <div class="container grid">
+        <img src="images/logo2.png" alt="" />
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#serv">Services</a></li>
+            <li><a href="#me">About</a></li>
+            <li><a href="#let-me-know">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-contact">
+          <h3>Phone #: (905) 868-2490</h3>
+          <h3>Email: mark.spalding@kw.com</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--Showcase-->
+    <section id="home" class="showcase">
+      <div class="showcase-container flex">
+        <img src="images/black-brick.jpg" alt="" style="width: 100%" />
+        <div class="showcase-text">
+          <p><u>Servicing Toronto and the GTA</u></p>
+          <h1>Call (905) 868-2490</h1>
+        </div>
+      </div>
+    </section>
+
+    <!--Services-->
+    <section id="serv" class="services">
+      <h2>How I Can Help</h2>
+      <div class="container flex">
+        <div class="card">
+          <i class="fas fa-search-location"></i>
+          <h4>Buying</h4>
+          <p>
+            When you’re looking for the perfect home, the details matter. We use
+            our experience to advise you on the Toronto market and help you find
+            the right home at the best possible price and terms to maximize your
+            buying power!
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-dollar-sign"></i>
+          <h4>Selling</h4>
+          <p>
+            Selling your home can be surprisingly time-consuming and emotionally
+            challenging, especially if you’ve never done it before. With
+            experience, hard work, and know-how we make it easy and stress free
+            for sellers of all kinds!
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-bed"></i>
+          <h4>Renting</h4>
+          <p>
+            Helping you find the right fit for your lifestyle whether that be a
+            35th floor condominium downtown or a basement apartment in the
+            suburbs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--About-->
+    <section id="me" class="about">
+      <h2>Your Realtor</h2>
+      <div class="container grid">
+        <div class="about-pic">
+          <img src="/images/Headshot.JPG" alt="" />
+        </div>
+        <div class="about-text">
+          <p>
+            Mark Spalding has been studying Real Estate over the past
+            <u>10 years</u> and has made a career of it over the past 5. With
+            over <strong>$5,000,000.00</strong> in sales in 2020, helping buyers
+            and sellers have a stress free experience is what Mark does best.
+            Growing up in York Region allowed Mark to start practicing real
+            estate in a more rural setting. Recently moving to Midtown, Toronto
+            allowed Mark to find continued success in a new environment. A 2020
+            International Bronze Recipient for Keller Williams Realty Centres,
+            Mark will do whatever it takes to make you comfortable during the
+            buying and selling process.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="let-me-know" class="contact">
+      <h2>Get in Touch</h2>
+      <div class="container grid">
+        <div class="contact-text">
+          <p>
+            Looking for more information? Send me a message or call
+            <strong>(905) 868-2490</strong> and I'll get back to you within
+            <u>24 hours!</u>
+          </p>
+        </div>
+
+        <div class="contact-form card">
+          <h3>Send me a message</h3>
+          <form id="get-in-touch" method="POST" name="form" data-netlify="true">
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Full Name" required />
+            </div>
+            <div class="form-control">
+              <input type="text" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-control">
+              <input type="text" name="phone" placeholder="Phone #" required />
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <textarea
+                type="text"
+                id="message-box"
+                name="message"
+                form="get-in-touch"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" value="Send" class="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Back to top button-->
+    <div>
+      <button id="toTopBtn" onclick="topFunction()" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container grid">
+        <img id="footer-img" src="images/logo2.png" alt="" />
+        <!--<div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>-->
+        <img id="footer-kwr" src="images/kwrc.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>

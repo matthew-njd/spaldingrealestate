@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #262943;
+  --secondary-color: #c59c90;
+  --third-color: #e1e1e1;
+  --light-color: #ffffff;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*navbar*/
+.navbar {
+  background-color: var(--primary-color);
+  height: 100px;
+}
+
+.navbar .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar img {
+  justify-self: start;
+  padding: 5px;
+  margin: 0 5px;
+  width: 70%;
+}
+
+nav {
+  justify-self: center;
+}
+
+.navbar ul {
+  font-size: 20px;
+  display: flex;
+}
+
+.nav-contact {
+  font-size: 16px;
+  justify-self: end;
+}
+
+.navbar a,
+.nav-contact {
+  color: var(--light-color);
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.nav-contact i {
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px var(--light-color) solid;
+}
+
+.navbar .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+/*Showcase*/
+.showcase .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.showcase-text {
+  position: absolute;
+  text-align: center;
+  color: var(--light-color);
+  text-shadow: -2px -2px var(--primary-color), 2px -2px var(--primary-color),
+    -2px 2px var(--primary-color), 2px 2px var(--primary-color);
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.showcase p {
+  font-size: 35px;
+}
+
+.showcase h1 {
+  font-size: 85px;
+}
+
+/*Services*/
+.services {
+  padding: 25px 0;
+  min-height: 350px;
+  border-top: 10px var(--primary-color) solid;
+  border-bottom: 10px var(--primary-color) solid;
+  background-image: url(/images/background2.png);
+}
+
+.services h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.services h4 {
+  font-size: 20px;
+}
+
+.services p {
+  font-size: 14px;
+}
+
+.services .card {
+  text-align: center;
+  width: 405px;
+  height: 200px;
+  margin: 18px 30px 30px;
+  transition: transform 0.2s ease-in;
+}
+
+.services .card:hover {
+  transform: translateY(-15px);
+}
+
+.services .flex {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*About*/
+.about {
+  padding: 0 50px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-image: url(/images/background.png);
+  border-bottom: 10px var(--primary-color) solid;
+}
+
+.about .grid {
+  grid-template-columns: auto 55%;
+}
+
+.about-text {
+  display: flex;
+  text-align: middle;
+  font-size: 18px;
+  animation: slideInFromRight 1.5s ease-in;
+}
+
+.about h2 {
+  color: var(--primary-color);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.about img {
+  border: 5px var(--primary-color) solid;
+  width: 80%;
+  animation: slideInFromLeft 1.5s ease-in;
+}
+
+.about-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Contact*/
+.contact {
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  min-height: 500px;
+  background-image: url(/images/background2.png);
+}
+
+.contact .grid {
+  grid-template-columns: auto 35%;
+}
+
+.contact h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.contact-text {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 35px;
+  animation: slideInFromLeft 2.5s ease-in;
+}
+
+.contact-form {
+  height: 450px;
+  width: auto;
+  padding: 40px;
+  overflow: none;
+  animation: slideInFromRight 2.5s ease-in;
+}
+
+.contact-form .form-control {
+  margin: 10px 0;
+}
+
+.contact-form input[type="text"] {
+  border: 2px solid var(--third-color);
+  width: 100%;
+  padding: 3px;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  border: 2px solid var(--third-color);
+  width: 100%;
+  height: 150px;
+  padding: 3px;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+}
+
+#message-box {
+  resize: none;
+}
+
+/*Footer*/
+.footer {
+  padding: 25px 50px;
+  background-color: var(--primary-color);
+}
+
+#footer-img {
+  justify-self: flex-end;
+  width: 50%;
+}
+
+#footer-kwr {
+  width: 20%;
+  justify-self: flex-start;
+}
+
+/*
+.footer .social {
+    display: none;
+    justify-self: flex-end;
+}
+
+.footer .social a {
+    color: var(--light-color);
+    margin: 0 10px;
+}
+*/
+
+/*Animations*/
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Tablets and under*/
+@media (max-width: 800px) {
+  /*Nav*/
+  .navbar {
+    height: auto;
+  }
+
+  .navbar .grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    height: auto;
+  }
+  .navbar img,
+  nav,
+  .nav-contact {
+    justify-self: center;
+  }
+
+  .nav-contact {
+    display: none;
+  }
+
+  .navbar ul {
+    padding-bottom: 10px;
+  }
+
+  /*showcase*/
+  .showcase img {
+    width: 50%;
+    height: 250px;
+  }
+
+  .showcase h1 {
+    font-size: 50px;
+  }
+
+  .showcase p {
+    font-size: 20px;
+  }
+
+  /*Services*/
+  .services h2 {
+    font-size: 25px;
+  }
+
+  .services h4,
+  p {
+    font-size: 15px;
+  }
+
+  .services .card {
+    width: 450px;
+    height: auto;
+  }
+
+  /*About*/
+  .about .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .about h2 {
+    font-size: 25px;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .about p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /*Contact*/
+  .contact {
+    padding: 10px 25px;
+  }
+  .contact h2 {
+    font-size: 25px;
+  }
+
+  .contact p {
+    width: 300;
+    font-size: 19px;
+  }
+
+  .contact .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .contact .card {
+    width: auto;
+    height: auto;
+  }
+
+  .contact-form {
+    width: 450px;
+    height: auto;
+  }
+
+  /*Footer*/
+  .footer .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer img {
+    width: 50%;
+  }
+}

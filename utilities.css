@@ -1,0 +1,77 @@
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+i {
+  font-size: 40px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  transform: scale(0.95);
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: var(--third-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#toTopBtn:hover {
+  transform: scale(0.9);
+}
+
+@media (max-width: 800px) {
+  i {
+    font-size: 20px;
+  }
+
+  #btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: var(--third-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+}
