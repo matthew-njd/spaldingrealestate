@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@
 
 body {
   line-height: 1.6;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 ul {
@@ -30,6 +30,7 @@ a {
 .navbar {
   background-color: var(--primary-color);
   height: 100px;
+  padding: 0 15px 0 15px;
 }
 
 .navbar .grid {
@@ -143,7 +144,8 @@ nav {
   text-align: center;
   width: 405px;
   height: 200px;
-  margin: 18px 30px 30px;
+  padding: 10px;
+  margin: 15px;
   transition: transform 0.2s ease-in;
 }
 
@@ -272,7 +274,7 @@ nav {
 }
 
 #footer-kwr {
-  width: 20%;
+  width: 25%;
   justify-self: flex-start;
 }
 
